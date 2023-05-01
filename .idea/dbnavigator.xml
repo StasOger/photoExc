@@ -13,7 +13,7 @@
   </component>
   <component name="DBNavigator.Project.DatabaseConsoleManager">
     <connection id="91ce9f4f-4dbb-4d73-bea9-54ac85f5e992">
-      <console name="Connection" type="STANDARD" schema="photo" session="Main"><![CDATA[INSERT INTO roles(name) VALUES('ROLE_USER');
+      <console name="Connection" type="STANDARD" schema="photoexchange" session="Main"><![CDATA[INSERT INTO roles(name) VALUES('ROLE_USER');
 INSERT INTO roles(name) VALUES('ROLE_ADMIN');
 
 select * from users;
@@ -37,6 +37,9 @@ insert into user_roles (user_id, role_id) values (0, 2);]]></console>
   <component name="DBNavigator.Project.ExecutionManager">
     <retain-sticky-names value="false" />
   </component>
+  <component name="DBNavigator.Project.FileConnectionMappingManager">
+    <mapping file-url="file://$PROJECT_DIR$/src/main/resources/querySQL.sql" connection-id="91ce9f4f-4dbb-4d73-bea9-54ac85f5e992" session-id="MAIN" current-schema="photoexchange" />
+  </component>
   <component name="DBNavigator.Project.ObjectQuickFilterManager">
     <last-used-operator value="EQUAL" />
     <filters />
@@ -56,7 +59,7 @@ insert into user_roles (user_id, role_id) values (0, 2);]]></console>
           <url-type value="DATABASE" />
           <host value="localhost" />
           <port value="3307" />
-          <database value="photo" />
+          <database value="photoExchange" />
           <type value="USER_PASSWORD" />
           <user value="root" />
           <deprecated-pwd value="cm9vdA==" />

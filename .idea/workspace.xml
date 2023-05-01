@@ -5,31 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b1512caa-49c7-41e0-9a23-2fd21c118af0" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Task" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/querySQL.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dbnavigator.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/photoExchange/DemoauthApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/photoExchange/DemoauthApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/photoExchange/configs/WebSecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/photoExchange/configs/WebSecurityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/photoExchange/controllers/AuthController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/photoExchange/controllers/SecurityController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/photoExchange/controllers/CommentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/photoExchange/controllers/CommentController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/photoExchange/controllers/ImageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/photoExchange/controllers/ImageController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/photoExchange/dto/ImageDtoIn.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/photoExchange/dto/ImageDtoIn.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/photoExchange/dto/ResponseDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/photoExchange/dto/ResponseDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/photoExchange/dto/SignUserDtoIn.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/photoExchange/dto/SignUserDtoIn.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/photoExchange/dto/SignUserOutDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/photoExchange/dto/SignUserOutDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/photoExchange/models/Comment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/photoExchange/models/Comment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/photoExchange/models/Image.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/photoExchange/models/Image.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/photoExchange/models/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/photoExchange/models/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/photoExchange/pojo/JwtResponse.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/photoExchange/pojo/LoginRequest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/photoExchange/pojo/MessageResponse.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/photoExchange/pojo/SignupRequest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/photoExchange/repository/CommentRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/photoExchange/repository/CommentRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/photoExchange/repository/ImagesRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/photoExchange/repository/ImagesRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/querySQL.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/querySQL.sql" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,7 +57,8 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "com.google.cloudcode.ide_session_index": "20230501_0012",
+    "TODO_SCOPE": "All Places",
+    "com.google.cloudcode.ide_session_index": "20230501_0020",
     "last_opened_file_path": "D:/IdeaProjects/spring-jwt-realization-main",
     "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings"
   }
@@ -138,6 +118,14 @@
       <option name="presentableId" value="Default" />
       <updated>1682810930027</updated>
     </task>
+    <task id="LOCAL-00001" summary="add/get/del image&#10;add/get/del comment">
+      <created>1682967716561</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1682967716561</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -155,5 +143,7 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$/.." />
     </ignored-roots>
+    <MESSAGE value="add/get/del image&#10;add/get/del comment" />
+    <option name="LAST_COMMIT_MESSAGE" value="add/get/del image&#10;add/get/del comment" />
   </component>
 </project>
