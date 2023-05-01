@@ -14,6 +14,9 @@ import javax.persistence.ManyToMany;
 import javax.persistence.Table;
 import javax.persistence.UniqueConstraint;
 
+import javax.validation.constraints.Pattern;
+import javax.validation.constraints.Size;
+
 @Entity
 @Table(name = "users",
 		uniqueConstraints = {
@@ -24,8 +27,12 @@ public class User {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
-	
+
+	@Size(min = 4, max = 32)
+	@Pattern(regexp = "[a-z0-9_\\-.@]+")
 	private String username;
+
+	@Size(min = 8, max = 500)
 	private String password;
 	@ManyToMany(fetch = FetchType.LAZY)
 	@JoinTable(name = "user_roles",
@@ -71,5 +78,15 @@ public class User {
 
 	public void setRoles(Set<Role> roles) {
 		this.roles = roles;
+	}
+
+	@Override
+	public String toString() {
+		return "User{" +
+				"id=" + id +
+				", username='" + username + '\'' +
+				", password='" + password + '\'' +
+				", roles=" + roles +
+				'}';
 	}
 }

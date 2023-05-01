@@ -1,27 +1,31 @@
 package com.example.photoExchange.dto;
 
+import java.util.Set;
+
 public class SignUserDtoIn {
-    private String login;
-    private String password;
+	
+	private String username;
+	private Set<String> roles;
+	private String password;
+	public String getUsername() {
+		return username;
+	}
+	public void setUsername(String username) {
+		this.username = username;
+	}
+	public Set<String> getRoles() {
+		return roles;
+	}
+	public void setRoles(Set<String> roles) {
+		this.roles = roles;
+	}
+	public String getPassword() {
+		return password;
+	}
+	public void setPassword(String password) {
+		this.password = password;
+	}
 
-    public SignUserDtoIn(String login, String password) {
-        this.login = login;
-        this.password = password;
-    }
 
-    public String getLogin() {
-        return login;
-    }
-
-    public String getPassword() {
-        return password;
-    }
-
-    @Override
-    public String toString() {
-        return "SignUserDtoIn{" +
-                "login='" + login + '\'' +
-                ", password='" + password + '\'' +
-                '}';
-    }
+	
 }

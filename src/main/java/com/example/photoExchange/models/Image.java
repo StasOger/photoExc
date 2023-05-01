@@ -3,6 +3,8 @@ package com.example.photoExchange.models;
 import javax.persistence.*;
 import java.util.List;
 
+import static javax.persistence.CascadeType.ALL;
+
 @Entity
 @Table(name = "image")
 public class Image {
@@ -20,7 +22,8 @@ public class Image {
     private double lng;
 
     private String url;
-    @OneToMany(mappedBy="image")
+    @ElementCollection(fetch = FetchType.EAGER)
+    @OneToMany(mappedBy="image", cascade = ALL)
     private List<Comment> comments;
 
     public Image(int id, String base64Image, long date, double lat, double lng, String url) {

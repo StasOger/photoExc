@@ -2,13 +2,11 @@ package com.example.photoExchange.dto;
 
 public class ImageDtoIn {
     private String base64Image;
-
-    private int date;
-
+    private long date;
     private double lat;
     private double lng;
 
-    public ImageDtoIn(String base64Image, int date, double lat, double lng) {
+    public ImageDtoIn(String base64Image, long date, double lat, double lng) {
         this.base64Image = base64Image;
         this.date = date;
         this.lat = lat;
@@ -22,7 +20,7 @@ public class ImageDtoIn {
         return base64Image;
     }
 
-    public int getDate() {
+    public long getDate() {
         return date;
     }
 

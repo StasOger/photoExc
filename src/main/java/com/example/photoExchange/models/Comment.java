@@ -12,7 +12,7 @@ public class Comment {
     private long date;
 
     private String text;
-    @ManyToOne
+    @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name="image_id", nullable=false)
     private Image image;
 
@@ -40,6 +40,8 @@ public class Comment {
     public Image getImage() {
         return image;
     }
+
+
 
     public void setImage(Image image) {
         this.image = image;

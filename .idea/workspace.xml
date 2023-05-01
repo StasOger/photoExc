@@ -5,52 +5,31 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b1512caa-49c7-41e0-9a23-2fd21c118af0" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../A1/unauthorizedDeliver/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../photoExchanger/src/main/java/photoExchanger/controllers/CommentController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../photoExchanger/src/main/java/photoExchanger/dto/CommentDtoIn.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../photoExchanger/src/main/java/photoExchanger/dto/CommentDtoOut.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../photoExchanger/src/main/java/photoExchanger/dto/ImageDtoIn.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../photoExchanger/src/main/java/photoExchanger/dto/ImageDtoOut.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../photoExchanger/src/main/java/photoExchanger/dto/ResponseDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../photoExchanger/src/main/java/photoExchanger/dto/SignUserDtoIn.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../photoExchanger/src/main/java/photoExchanger/dto/SignUserOutDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../photoExchanger/src/main/java/photoExchanger/models/Comment.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../photoExchanger/src/main/java/photoExchanger/repository/CommentRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../photoExchanger/src/main/java/photoExchanger/repository/UserRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../photoExchanger/src/main/java/photoExchanger/security/JWTAuthorizationFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../photoExchanger/src/main/java/photoExchanger/services/SecurityService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../photoExchanger/src/main/resources/Task" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../photoExchanger/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../selenium/chromedriver111.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/photoExchange/controllers/CommentController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/photoExchange/controllers/ImageController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/photoExchange/dto/CommentDtoIn.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/photoExchange/dto/CommentDtoOut.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/photoExchange/dto/ImageDtoIn.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/photoExchange/dto/ImageDtoOut.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/photoExchange/dto/ResponseDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/photoExchange/dto/SignUserDtoIn.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/photoExchange/dto/SignUserOutDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/photoExchange/models/Comment.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/photoExchange/models/Image.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/photoExchange/repository/CommentRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/photoExchange/repository/ImagesRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../src/main/webapp/WEB-INF/appengine-web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../A1/Task1/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../A1/Task1/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../A1/Task1/src/main/java/org/example/Task2.java" beforeDir="false" afterPath="$PROJECT_DIR$/../A1/Task1/src/main/java/org/example/Task2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../A1/Task3/src/main/java/A1/Task3/controller/PostController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../A1/Task3/src/main/java/A1/Task3/controller/PostController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../A1/Task3/src/main/java/A1/Task3/repository/PostingsRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../A1/Task3/src/main/java/A1/Task3/repository/PostingsRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../selenium/chromedriver109.exe" beforeDir="false" afterPath="$PROJECT_DIR$/../selenium/chromedriver109.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/MainApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/../src/main/java/MainApp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/Threads/MyFirstThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/../src/main/java/Threads/MyFirstThread.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/Threads/MySecondThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/../src/main/java/Threads/MySecondThread.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/bot/SimpleBot.java" beforeDir="false" afterPath="$PROJECT_DIR$/../src/main/java/bot/SimpleBot.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/copart/ParsCopart.java" beforeDir="false" afterPath="$PROJECT_DIR$/../src/main/java/copart/ParsCopart.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/java/seleniumAvBy/ParsAvBy.java" beforeDir="false" afterPath="$PROJECT_DIR$/../src/main/java/seleniumAvBy/ParsAvBy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/Posts.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../src/main/resources/Posts.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/main/resources/TgUser.csv" beforeDir="false" afterPath="$PROJECT_DIR$/../src/main/resources/TgUser.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Task" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/querySQL.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dbnavigator.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/photoExchange/DemoauthApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/photoExchange/DemoauthApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/photoExchange/configs/WebSecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/photoExchange/configs/WebSecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/photoExchange/controllers/AuthController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/photoExchange/controllers/SecurityController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/photoExchange/controllers/CommentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/photoExchange/controllers/CommentController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/photoExchange/controllers/ImageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/photoExchange/controllers/ImageController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/photoExchange/dto/ImageDtoIn.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/photoExchange/dto/ImageDtoIn.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/photoExchange/dto/ResponseDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/photoExchange/dto/ResponseDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/photoExchange/dto/SignUserDtoIn.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/photoExchange/dto/SignUserDtoIn.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/photoExchange/dto/SignUserOutDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/photoExchange/dto/SignUserOutDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/photoExchange/models/Comment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/photoExchange/models/Comment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/photoExchange/models/Image.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/photoExchange/models/Image.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/photoExchange/models/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/photoExchange/models/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/photoExchange/pojo/JwtResponse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/photoExchange/pojo/LoginRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/photoExchange/pojo/MessageResponse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/photoExchange/pojo/SignupRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/photoExchange/repository/CommentRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/photoExchange/repository/CommentRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/photoExchange/repository/ImagesRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/photoExchange/repository/ImagesRepository.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,18 +37,18 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;
   }
-}]]></component>
+}</component>
   <component name="GithubPullRequestsUISettings">
     <option name="selectedUrlAndAccountId">
       <UrlAndAccount>
         <option name="accountId" value="d929d64c-6dce-48cc-b771-8d68d1f8c5e0" />
-        <option name="url" value="https://github.com/StasOger/parsApp.git" />
+        <option name="url" value="https://github.com/StasOger/photoExchange.git" />
       </UrlAndAccount>
     </option>
   </component>
@@ -98,14 +77,18 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "com.google.cloudcode.ide_session_index": "20230430_0005",
-    "last_opened_file_path": "D:/IdeaProjects/spring-jwt-realization-main/src/main/java/com/example/demoauth",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "com.google.cloudcode.ide_session_index": "20230501_0012",
+    "last_opened_file_path": "D:/IdeaProjects/spring-jwt-realization-main",
     "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\IdeaProjects\spring-jwt-realization-main\src\main\java\com\example\demoauth" />
+    </key>
+    <key name="ExtractSuperBase.RECENT_KEYS">
+      <recent name="com.example.photoExchange.service" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.example.demoauth.repository" />

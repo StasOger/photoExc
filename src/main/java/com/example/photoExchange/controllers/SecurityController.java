@@ -22,18 +22,19 @@ import com.example.photoExchange.configs.jwt.JwtUtils;
 import com.example.photoExchange.models.ERole;
 import com.example.photoExchange.models.Role;
 import com.example.photoExchange.models.User;
-import com.example.photoExchange.pojo.JwtResponse;
-import com.example.photoExchange.pojo.LoginRequest;
-import com.example.photoExchange.pojo.MessageResponse;
-import com.example.photoExchange.pojo.SignupRequest;
+import com.example.photoExchange.dto.SignUserOutDto;
+import com.example.photoExchange.dto.ResponseDto;
+import com.example.photoExchange.dto.SignUserDtoIn;
 import com.example.photoExchange.repository.RoleRepository;
 import com.example.photoExchange.repository.UserRepository;
 import com.example.photoExchange.service.UserDetailsImpl;
 
+import javax.validation.ValidationException;
+
 @RestController
-@RequestMapping("/api/auth")
+@RequestMapping("/api/account")
 @CrossOrigin(origins = "*", maxAge = 3600)
-public class AuthController {
+public class SecurityController {
 	
 	@Autowired
 	AuthenticationManager authenticationManager;
@@ -51,12 +52,12 @@ public class AuthController {
 	JwtUtils jwtUtils;
 	
 	@PostMapping("/signin")
-	public ResponseEntity<?> authUser(@RequestBody LoginRequest loginRequest) {
+	public ResponseEntity<?> authUser(@RequestBody SignUserDtoIn signUserDtoIn) {
 		
 		Authentication authentication = authenticationManager
 				.authenticate(new UsernamePasswordAuthenticationToken(
-						loginRequest.getUsername(), 
-						loginRequest.getPassword()));
+						signUserDtoIn.getUsername(),
+						signUserDtoIn.getPassword()));
 		
 		SecurityContextHolder.getContext().setAuthentication(authentication);
 		String jwt = jwtUtils.generateJwtToken(authentication);
@@ -66,27 +67,36 @@ public class AuthController {
 				.map(item -> item.getAuthority())
 				.collect(Collectors.toList());
 		
-		return ResponseEntity.ok(new JwtResponse(jwt, 
+		return ResponseEntity.ok(new SignUserOutDto(
 				userDetails.getId(), 
 				userDetails.getUsername(),
+				jwt,
 				roles));
 	}
-	
+
 	@PostMapping("/signup")
-	public ResponseEntity<?> registerUser(@RequestBody SignupRequest signupRequest) {
-		
-		if (userRespository.existsByUsername(signupRequest.getUsername())) {
+	public ResponseEntity<?> registerUser(@RequestBody SignUserDtoIn signUserDtoIn) {
+
+		if (userRespository.existsByUsername(signUserDtoIn.getUsername())) {
 			return ResponseEntity
 					.badRequest()
-					.body(new MessageResponse("Error: Username is exist"));
+					.body(new ResponseDto("Error: Username is exist"));
 		}
-		
-		User user = new User(signupRequest.getUsername(),
-				passwordEncoder.encode(signupRequest.getPassword()));
-		
-		Set<String> reqRoles = signupRequest.getRoles();
+
+		if (!signUserDtoIn.getUsername().matches("[a-z0-9_\\-.@]{4,32}")) {
+			throw new ValidationException("Username can contain only a-z 0-9 @ . -");
+		}
+
+		if (!signUserDtoIn.getPassword().matches("[a-zA-Z0-9]{8,500}")) {
+			throw new ValidationException("Password can contain only a-z A-Z 0-9");
+		}
+
+		User user = new User(signUserDtoIn.getUsername(),
+				passwordEncoder.encode(signUserDtoIn.getPassword()));
+
+		Set<String> reqRoles = signUserDtoIn.getRoles();
 		Set<Role> roles = new HashSet<>();
-		
+
 		if (reqRoles == null) {
 			Role userRole = roleRepository
 					.findByName(ERole.ROLE_USER)
@@ -95,24 +105,25 @@ public class AuthController {
 		} else {
 			reqRoles.forEach(r -> {
 				switch (r) {
-				case "admin":
-					Role adminRole = roleRepository
-						.findByName(ERole.ROLE_ADMIN)
-						.orElseThrow(() -> new RuntimeException("Error, Role ADMIN is not found"));
-					roles.add(adminRole);
-					
-					break;
+					case "admin":
+						Role adminRole = roleRepository
+								.findByName(ERole.ROLE_ADMIN)
+								.orElseThrow(() -> new RuntimeException("Error, Role ADMIN is not found"));
+						roles.add(adminRole);
 
-				default:
-					Role userRole = roleRepository
-						.findByName(ERole.ROLE_USER)
-						.orElseThrow(() -> new RuntimeException("Error, Role USER is not found"));
-					roles.add(userRole);
+						break;
+
+					default:
+						Role userRole = roleRepository
+								.findByName(ERole.ROLE_USER)
+								.orElseThrow(() -> new RuntimeException("Error, Role USER is not found"));
+						roles.add(userRole);
 				}
 			});
 		}
 		user.setRoles(roles);
 		userRespository.save(user);
-		return ResponseEntity.ok(new MessageResponse("User CREATED"));
+		return ResponseEntity.ok(new ResponseDto("User CREATED"));
 	}
 }
+
